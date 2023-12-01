@@ -4,4 +4,4 @@ Project For Department Of English
 
 Use : Provide A Website For English Lab
 Build On : React+Vite
-Build By : Kishor T
+Build By : Team Exotic
