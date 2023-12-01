@@ -12,7 +12,6 @@ import Error from "./Error404.jsx";
 import Test from "./Test.jsx";
 import FormTest from "./FormTest.jsx";
 import WebTest from "./WebTest.jsx";
-import WebTestcon from "./WebTestConductor.jsx";
 
 function App() {
   
@@ -26,7 +25,6 @@ function App() {
             <Route path="test" element={<Test />} />
             <Route path="form-test" element={<FormTest />} />
             <Route path="web-test" element={<WebTest />} />
-            <Route path="web-test-con" element={<WebTestcon />} />
             <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
