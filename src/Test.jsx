@@ -6,12 +6,7 @@ import LogImg from "./assets/LogImg.png";
 
 
 function Test() {
-     function opnForm(){
-        window.location.href = '/form-test';
-     }
-     function opnWeb(){
-        window.location.href = '/web-test';
-     }
+     
     return (
     <>
         <div className='Login'>
@@ -43,8 +38,8 @@ function Test() {
         <div className='TestHome'>
             <p>Take Performance Test</p>
             <div className='butCont'>
-                <button onClick={opnForm} className='testBut'>Google Form Test</button>
-                <button onClick={opnWeb} className='testBut'>Web Test</button>
+                <button  className='testBut'>Google Form Test</button>
+                <button  className='testBut'>Web Test</button>
             </div>
             
         </div>
