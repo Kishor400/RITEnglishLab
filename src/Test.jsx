@@ -1,5 +1,5 @@
 import './TestStyle.css';
-
+import FormTest from "./FormTest.jsx";
 
 import LogImg from "./assets/LogImg.png";
 
@@ -47,6 +47,9 @@ function Test() {
                 <button onClick={opnWeb} className='testBut'>Web Test</button>
             </div>
             
+        </div>
+        <div>
+            <FormTest/>
         </div>
         
     </>

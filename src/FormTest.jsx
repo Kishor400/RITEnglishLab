@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './App.css';
-import FormData from "/FormTestData.txt";
 import VideoImg from "./assets/VideoImg.jpg";
 
 import React, { useState, useEffect } from 'react';
