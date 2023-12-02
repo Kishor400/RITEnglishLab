@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import VideoImg from "./assets/VideoImg.jpg";
 
-import formData from "./assets/FormTest.json";
+import formData from "./assets/formTest.json";
 
 function FormTest() {
     
