@@ -17,9 +17,8 @@ function FormTest() {
           <div>
               <p>Latest</p>
               <div>
-                <a href={FormTest.Test1.Link}>{FormTest.Test1.Title}</a>
-                <a href={FormTest.Test2.Link}>{FormTest.Test2.Title}</a>
-                <a href={FormTest.Test1.Link}>{FormTest.Test1.Title}</a>
+                <p>OP</p>
+                
               </div>
               <button>More</button>
           </div>
