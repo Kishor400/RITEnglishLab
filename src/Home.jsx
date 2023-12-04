@@ -15,7 +15,7 @@ function App() {
         <div className="studentL">
           <div className="header">
             <p className="college">Ramco Institute Of Technology</p>
-            <p> English is one such language in the world that satisfies both the above purposes. English has been regarded
+            <p className='parag'> English is one such language in the world that satisfies both the above purposes. English has been regarded
           as the first global Lingua Franca.</p>
           </div>
           <div className="stcontent">

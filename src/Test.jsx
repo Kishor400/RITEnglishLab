@@ -21,7 +21,7 @@ function Test() {
             </div>
             
         </div>
-        <div>
+        <div className='Form'>
             <FormTest/>
         </div>
         
