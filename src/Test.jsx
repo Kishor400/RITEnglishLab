@@ -2,6 +2,7 @@ import './TestStyle.css';
 import FormTest from "./FormTest.jsx";
 
 import LogImg from "./assets/LogImg.png";
+import LoginPage from './LoginPage.jsx';
 
 
 
@@ -10,30 +11,7 @@ function Test() {
     return (
     <>
         <div className='Login'>
-            <div className="main">
-                <div className="mainL">
-                    <div>
-                        <p className="ram">Ramco Institute Of Technology</p>
-                        <p className="depe">Department Of English</p>
-                    </div>
-                    <img src={LogImg}/>
-
-                </div>
-                <div className="mainR">
-                    <div className="login">
-                        <p>Log In</p>
-                        <form id="logform">
-
-                            <input type="number" placeholder="Reg Number" id="logreg"/>
-                            <input type="password" placeholder="Password" id="logpwd"/>
-                            <p>Don't have An Account ? Please <a className="txtdeco">Signin</a></p>
-                            <button type="submit">Submit</button>
-
-                        </form>
-                    </div>
-
-                </div>
-            </div>
+            <LoginPage/>
         </div>
         <div className='TestHome'>
             <p>Take Performance Test</p>
