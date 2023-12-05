@@ -12,22 +12,19 @@ function FormTest() {
   return (
     
     <>
-      <div>
+      <div className='FormTest'>
           <p>Assessment On Google Form</p>
           <div>
               <p>Latest</p>
               <div>
-                <p>OP</p>
-                
+                <p>OP1</p>
+                <p>OP2</p>
+                <p>OP3</p>
               </div>
-              <button>More</button>
+              <a>More</a>
           </div>
       </div>
-      <div>
-        <div>
-          
-        </div>
-      </div>
+      
     </>
   )
 }
