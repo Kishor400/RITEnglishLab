@@ -14,10 +14,16 @@ function Test() {
             <LoginPage/>
         </div>
         <div className='TestHome'>
-            <p>Take Performance Test</p>
-            <div className='butCont'>
-                <button  className='testBut'>Google Form Test</button>
-                <button  className='testBut'>Web Test</button>
+            <div>
+                <img src={LogImg} className='testImger'/>
+            </div>
+            <div className='TestR'>
+                <p className='TestT'>Take Performance Test</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid facilis praesentium! Optio cum iusto esse voluptatum porro aliquam, et mollitia fuga, exercitationem quibusdam cumque tempora! Dicta dolorum.</p>
+                <div className='butCont'>
+                    <button  className='testBut'>Google Form Test</button>
+                    <button  className='testBut'>Web Test</button>
+                </div>
             </div>
             
         </div>
