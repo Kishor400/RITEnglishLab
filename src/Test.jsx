@@ -1,5 +1,6 @@
 import './TestStyle.css';
 import FormTest from "./FormTest.jsx";
+import WebTest from "./WebTest.jsx";
 
 import LogImg from "./assets/LogImg.png";
 import LoginPage from './LoginPage.jsx';
@@ -27,8 +28,11 @@ function Test() {
             </div>
             
         </div>
-        <div className='Form'>
+        <div className='FormT'>
             <FormTest/>
+        </div>
+        <div className='WebT'>
+            <WebTest/>
         </div>
         
     </>
