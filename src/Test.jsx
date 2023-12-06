@@ -10,12 +10,16 @@ import LoginPage from './LoginPage.jsx';
 function Test() {
 
     function opnForm(){
+        Login();
         document.querySelector('.TestHome').style="display:none;";
         document.querySelector('.FormT').style="display:flex;";
     }
     function opnWeb(){
         document.querySelector('.TestHome').style="display:none;";
         document.querySelector('.WebT').style="display:flex;";
+    }
+    function Login(){
+        document.querySelector('.Log').style="display:flex;";
     }
      
     return (
@@ -42,6 +46,9 @@ function Test() {
         </div>
         <div className='WebT'>
             <WebTest/>
+        </div>
+        <div className='Log'>
+            <LoginPage/>
         </div>
         
     </>

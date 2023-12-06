@@ -7,7 +7,7 @@ body{
 .Login{
     display: none;
 }
-.FormT,.WebT{
+.FormT,.WebT,.Log{
     display: none;
 }
 
@@ -68,4 +68,5 @@ body{
     font-size: 20px;
     margin-bottom: 0px;
 }
+
 
