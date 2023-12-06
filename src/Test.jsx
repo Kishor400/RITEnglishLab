@@ -1,33 +1,33 @@
 import './TestStyle.css';
 import FormTest from "./FormTest.jsx";
 import WebTest from "./WebTest.jsx";
-
+import React, { useState } from 'react';
 import LogImg from "./assets/LogImg.png";
-import LoginPage from './LoginPage.jsx';
 
 
 
-function Test() {
+
+function Test(info) {
+
+    
+    console.log(info);
+    
 
     function opnForm(){
-        Login();
-        document.querySelector('.TestHome').style="display:none;";
         document.querySelector('.FormT').style="display:flex;";
-    }
-    function opnWeb(){
         document.querySelector('.TestHome').style="display:none;";
+      }
+      function opnWeb(){
         document.querySelector('.WebT').style="display:flex;";
-    }
-    function Login(){
-        document.querySelector('.Log').style="display:flex;";
-    }
+        document.querySelector('.TestHome').style="display:none;";
+      }
+    
      
     return (
     <>
-        <div className='Login'>
-            <LoginPage/>
-        </div>
+    <p className='namer'>{info.Name}</p>
         <div className='TestHome'>
+            
             <div>
                 <img src={LogImg} className='testImger'/>
             </div>
@@ -42,14 +42,11 @@ function Test() {
             
         </div>
         <div className='FormT'>
-            <FormTest/>
-        </div>
-        <div className='WebT'>
-            <WebTest/>
-        </div>
-        <div className='Log'>
-            <LoginPage/>
-        </div>
+          <FormTest/>
+      </div>
+      <div className='WebT'>
+          <WebTest/>
+      </div>
         
     </>
   )

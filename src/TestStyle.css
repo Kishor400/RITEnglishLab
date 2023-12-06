@@ -7,7 +7,7 @@ body{
 .Login{
     display: none;
 }
-.FormT,.WebT,.Log{
+.FormT,.WebT,.TestPage{
     display: none;
 }
 
@@ -68,5 +68,7 @@ body{
     font-size: 20px;
     margin-bottom: 0px;
 }
-
+.namer{
+    position: fixed;
+}
 
