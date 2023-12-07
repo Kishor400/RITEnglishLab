@@ -26,7 +26,7 @@ const LoginPage = () => {
       if(x==Reg){
         if(y[i]==Password){
           console.log("Welcome");
-          setInfo({Name:LogData.Name[i],Reg:LogData.Reg[i]});
+          setInfo({ios:LogData.Reg[i]+"$"+LogData.Name[i]});
           document.querySelector(".TestPage").style="display:flex;";
           document.querySelector(".LogIn").style="display:none;";
         }else{
