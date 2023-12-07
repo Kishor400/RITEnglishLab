@@ -10,8 +10,7 @@ import LogImg from "./assets/LogImg.png";
 function Test(info) {
 
     let io=JSON.stringify(info);
-    let ios=io.split("{")[2].split("}")
-    console.log(ios);
+    let ios=io.split('"')[3].split("$")
     
 
     function opnForm(){
@@ -26,7 +25,7 @@ function Test(info) {
      
     return (
     <>
-    <p className='namer'>{io}</p>
+    <p className='namer'>{ios[1]}</p>
         <div className='TestHome'>
             
             <div>

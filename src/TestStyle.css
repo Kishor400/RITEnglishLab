@@ -70,5 +70,7 @@ body{
 }
 .namer{
     position: fixed;
+    top:0px;
+    right:25px;
 }
 

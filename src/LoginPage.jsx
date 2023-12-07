@@ -12,10 +12,11 @@ const LoginPage = () => {
   const [Password, setPassword] = useState('');
   const [infoData, setInfo] = useState('');
 
- 
+  
 
   const handleSubmit = event => {
     //console.log('handleSubmit ran');
+    
     event.preventDefault();
 
     console.log(LogData)
@@ -26,7 +27,7 @@ const LoginPage = () => {
       if(x==Reg){
         if(y[i]==Password){
           console.log("Welcome");
-          setInfo({ios:LogData.Reg[i]+"$"+LogData.Name[i]});
+          setInfo(LogData.Reg[i]+"$"+LogData.Name[i]);
           document.querySelector(".TestPage").style="display:flex;";
           document.querySelector(".LogIn").style="display:none;";
         }else{
