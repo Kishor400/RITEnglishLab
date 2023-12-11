@@ -58,6 +58,7 @@ function Temp({test}) {
             <div className='mark'>
                 <p>{test.Title}</p>
                 <p>Mark : {mark}</p>
+                <button>Go Back</button>
             </div>
         </div>
     

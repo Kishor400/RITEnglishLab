@@ -3,34 +3,42 @@ import Temp from "./WebTestModule.jsx";
 import data from "./assets/data.json";
 import LogImg from "./assets/LogImg.png";
 import { Link } from 'react-router-dom';
+import React, { useState,useEffect } from 'react';
 
 
 function WebTest() {
     
-     
+  const [Test, setTest] = useState('');
+  function chgTest(x){
+    //document.querySelector("Temp").test="{x}";
+    setTest(x);
+    document.querySelector(".tt").style="display:none;";
+    document.querySelector(".testMod").style="display:flex;";
+  }
     return (
     <>
-        <div>
+        <div className='tt'>
             <p>Assessment On Web</p>
             <div>
                 <p>Latest</p>
-                <div>
+                <div className='Tests'>
                     <div>
-                      <button>{data.Test1.Title}</button>
+                      <a onClick={()=>chgTest(data.Test1)}>{data.Test1.Title}</a>
                     </div>
                     <div>
-                      <button>{data.Test2.Title}</button>
+                      <a onClick={()=>chgTest(data.Test2)}>{data.Test2.Title}</a>
                     </div>
                     <div>
-                      <button>{data.Test2.Title}</button>
+                      <a onClick={()=>chgTest(data.Test3)}>{data.Test3.Title}</a>
                     </div>
                 </div>
 
                 <button>More</button>
             </div>
         </div>
-        <div>
-          <Temp test={data.Test1}/>
+        <div className='testMod'>
+          
+          <Temp test={Test||data.Test1} className='TTT'/>
         </div>
         
     </>
