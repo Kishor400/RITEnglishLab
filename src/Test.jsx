@@ -45,7 +45,7 @@ function Test(info) {
           <FormTest/>
       </div>
       <div className='WebT'>
-          <WebTest/>
+          <WebTest logInfo={ios}/>
       </div>
         
     </>

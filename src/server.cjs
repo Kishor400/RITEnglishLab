@@ -11,7 +11,7 @@ app.use(express.json());
 // Define a route to handle the JSON file creation
 app.post('/write-json', (req, res) => {
   const data = req.body;
-  const filePath = path.join(__dirname, 'data.json');
+  const filePath = path.join(__dirname, 'markData.json');
 
   // Write the JSON data to a file
   fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
@@ -19,7 +19,6 @@ app.post('/write-json', (req, res) => {
       console.error('Error writing JSON file:', err);
       return res.status(500).send('Internal Server Error');
     }
-
     console.log('JSON file written successfully!');
     res.status(200).send('JSON file written successfully!');
   });

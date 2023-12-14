@@ -1,12 +1,12 @@
 import './TestStyle.css';
 import Temp from "./WebTestModule.jsx";
-import data from "./data.json";
+import data from "./assets/data.json";
 import LogImg from "./assets/LogImg.png";
 import { Link } from 'react-router-dom';
 import React, { useState,useEffect } from 'react';
 
 
-function WebTest() {
+function WebTest(logInfo) {
     
   const [Test, setTest] = useState('');
   function chgTest(x){
@@ -38,7 +38,7 @@ function WebTest() {
         </div>
         <div className='testMod'>
           
-          <Temp test={Test||data.Test1} className='TTT'/>
+          <Temp test={Test||data.Test1} logInfo={logInfo} className='TTT'/>
         </div>
         
     </>
