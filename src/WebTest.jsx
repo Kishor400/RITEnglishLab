@@ -1,6 +1,6 @@
 import './TestStyle.css';
 import Temp from "./WebTestModule.jsx";
-import data from "./assets/data.json";
+import data from "./data.json";
 import LogImg from "./assets/LogImg.png";
 import { Link } from 'react-router-dom';
 import React, { useState,useEffect } from 'react';

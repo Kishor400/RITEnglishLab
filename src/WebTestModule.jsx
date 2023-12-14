@@ -3,15 +3,45 @@ import { useState } from 'react';
 import React, { useEffect } from 'react';
 import LogImg from "./assets/LogImg.png";
 import Test from './Test';
+import data from "./data.json"
 
 
 
 
 function Temp({test}) {
 
+    console.log(data.Test1);
+    console.log(test);
+
     const [x, setX] = useState(0);
 
     const [mark, setmark] = useState(0);
+
+    // SERVER SIDE
+
+    const [jsonData, setJsonData] = useState({ key: 'value' });
+
+        const handleWriteJson = async () => {
+            try {
+            const response = await fetch('/write-json', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(jsonData),
+            });
+
+            if (response.ok) {
+                console.log('JSON file written successfully!');
+            } else {
+                console.error('Failed to write JSON file:', response.statusText);
+            }
+            } catch (error) {
+            console.error('Error:', error.message);
+            }
+        };
+
+    // ======
 
 
     useEffect(() => {
@@ -58,7 +88,7 @@ function Temp({test}) {
             <div className='mark'>
                 <p>{test.Title}</p>
                 <p>Mark : {mark}</p>
-                <button>Go Back</button>
+                <button onClick={handleWriteJson}>Go Back</button>
             </div>
         </div>
     
