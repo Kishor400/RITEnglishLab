@@ -6,6 +6,34 @@ import React, { useState, useEffect } from 'react';
 
 const LoginPage = () => {
 
+  const [SClass, setSClass] = useState("NONE");
+  // const [SName, setSName] = useState("NONE");
+  // const [SReg, setSReg] = useState("NONE");
+  // const [SPass, setSPss] = useState("NONE");
+  // const [SPassCon, setSPassCon] = useState("NONE");
+
+  const handleClassChange = (e) => {
+    setSClass(e.target.value);
+  };
+
+
+
+  function SignUp(){
+    const SReg=document.getElementById('SReg').value;
+    const SName=document.getElementById('SName').value;
+    const SPass=document.getElementById('SPass').value;
+    const SPassCon=document.getElementById('SPassCon').value;
+    if(SPass==SPassCon){
+      if(LogData.Reg.includes(SReg)){
+        alert("NOPE");
+      }else{
+        alert("YEAP");
+      }
+    }else{
+      alert("Password Not Same")
+    }
+  }
+
   useEffect(() => {
     const registerBtn = document.getElementById('register');
     const loginBtn = document.getElementById('login');
@@ -97,10 +125,16 @@ const LoginPage = () => {
           <div className="form-container sign-up">
               <form>
                   <h1>Create Account</h1>
-                  <input type="text" placeholder="Name"/>
-                  <input type="email" placeholder="Email"/>
-                  <input type="password" placeholder="Password"/>
-                  <button>Sign Up</button>
+                  <input type="text" placeholder="Name" id='SName'/>
+                  <input type="text" placeholder="Register Number" id='SReg'/>
+                  <select value={SClass} onChange={handleClassChange}>
+                    <option value="CSBS">CSBS</option>
+                    <option value="MECH">MECH</option>
+                    <option value="ECE">ECE</option>
+                  </select>
+                  <input type="password" placeholder="Password" id='SPass'/>
+                  <input type="password" placeholder="Confrim Password" id='SPassCon'/>
+                  <button onClick={SignUp}>Sign Up</button>
               </form>
           </div>
           <div className="form-container sign-in LogIn">

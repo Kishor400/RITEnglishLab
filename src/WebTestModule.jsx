@@ -3,7 +3,7 @@ import { useState } from 'react';
 import React, { useEffect } from 'react';
 import LogImg from "./assets/LogImg.png";
 import Test from './Test';
-import datas from "./markData.json"
+import datas from "./assets/markData.json"
 
 
 
@@ -33,7 +33,7 @@ function Temp({test,logInfo}) {
                 'Content-Type': 'application/json',
                 },
                 
-                body: JSON.stringify({data:prevData}),
+                body: JSON.stringify({data:prevData,type:1}),
             });
 
             if (response.ok) {
