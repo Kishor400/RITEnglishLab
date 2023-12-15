@@ -3,12 +3,12 @@ import { useState } from 'react';
 import React, { useEffect } from 'react';
 import LogImg from "./assets/LogImg.png";
 import Test from './Test';
-import datas from "./data.json"
+import datas from "./markData.json"
 
 
 
 
-function Temp({test},{logInfo}) {
+function Temp({test,logInfo}) {
 
     //console.log(data.Test1);
     console.log(logInfo);
@@ -22,18 +22,18 @@ function Temp({test},{logInfo}) {
 
     // SERVER SIDE
 
-    
-
     //const [jsonData, setJsonData] = useState({ mark: mark });
         
         const handleWriteJson = async () => {
             try {
+                prevData.push([logInfo[0],test.Index,mark]);
             const response = await fetch('/write-json', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({data:[prevData,[test.Title,mark]]}),
+                
+                body: JSON.stringify({data:prevData}),
             });
 
             if (response.ok) {

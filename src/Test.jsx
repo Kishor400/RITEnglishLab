@@ -11,6 +11,8 @@ function Test(info) {
 
     let io=JSON.stringify(info);
     let ios=io.split('"')[3].split("$")
+
+    console.log(ios);
     
 
     function opnForm(){

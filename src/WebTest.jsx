@@ -7,6 +7,8 @@ import React, { useState,useEffect } from 'react';
 
 
 function WebTest(logInfo) {
+
+  console.log(logInfo.logInfo);
     
   const [Test, setTest] = useState('');
   function chgTest(x){
@@ -38,7 +40,7 @@ function WebTest(logInfo) {
         </div>
         <div className='testMod'>
           
-          <Temp test={Test||data.Test1} logInfo={logInfo} className='TTT'/>
+          <Temp test={Test||data.Test1} logInfo={logInfo.logInfo} className='TTT'/>
         </div>
         
     </>
