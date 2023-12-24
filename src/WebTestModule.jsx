@@ -1,4 +1,4 @@
-import './TestStyle.css';
+import './testmod.css';
 import { useState } from 'react';
 import React, { useEffect } from 'react';
 import LogImg from "./assets/LogImg.png";
@@ -13,7 +13,7 @@ function Temp({test,logInfo}) {
     //console.log(data.Test1);
     console.log(logInfo);
 
-    const prevData=datas.data;
+    const prevData=datas;
     console.log(prevData);
 
     const [x, setX] = useState(0);
@@ -74,20 +74,35 @@ function Temp({test,logInfo}) {
         }
       };
 
+      function chgbg(n){
+        document.querySelector(".opt"+1).style="color:black;";
+        document.querySelector(".opt"+2).style="color:black;";
+        document.querySelector(".opt"+3).style="color:black;";
+        document.querySelector(".opt"+4).style="color:black;";
+        
+        document.querySelector(".opt"+n).style="color:blue;";
+        
+      }
+
     return (
  
         <div>
-            <div className='test-cont'>
-                <p>{test.Title}</p>
-                <div>
-                    <p>{test.q[x]}</p>
-                    <div>
-                        <input type="radio" name='answer' value={test.a1[x]}/><label>{test.a1[x]}</label>
-                        <input type="radio" name='answer' value={test.a2[x]}/><label>{test.a2[x]}</label>
-                        <input type="radio" name='answer' value={test.a3[x]}/><label>{test.a3[x]}</label>
-                        <input type="radio" name='answer' value={test.a4[x]}/><label>{test.a4[x]}</label>
+            <div className='body'>
+                <div className='test-cont'>
+                    <p>{test.Title}</p>
+                    <div className='qa'>
+                        <p className='q'>{test.q[x]}</p>
+                        <div className='a'>
+                            
+                            <label className='opt opt1' onClick={()=>chgbg(1)}><input type="radio" name='answer' className='rad' value={test.a1[x]}/>{test.a1[x]}</label>
+                            <label className='opt opt2' onClick={()=>chgbg(2)}><input type="radio" name='answer' className='rad' value={test.a2[x]}/>{test.a2[x]}</label>
+                            <label className='opt opt3' onClick={()=>chgbg(3)}><input type="radio" name='answer' className='rad' value={test.a3[x]}/>{test.a3[x]}</label>
+                            <label className='opt opt4' onClick={()=>chgbg(4)}><input type="radio" name='answer' className='rad' value={test.a4[x]}/>{test.a4[x]}</label>
+                            
+                            
+                        </div>
+                        <button onClick={handleRadioSelection} id='butt' >{test.but[x]}</button>
                     </div>
-                    <button onClick={handleRadioSelection} id='butt' >{test.but[x]}</button>
                 </div>
             </div>
             <div className='mark'>
