@@ -27,7 +27,7 @@ function Temp({test,logInfo}) {
         const handleWriteJson = async () => {
             try {
                 prevData.push([logInfo[0],test.Index,mark]);
-            const response = await fetch('/write-json', {
+                const response = await fetch('/write-json', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',

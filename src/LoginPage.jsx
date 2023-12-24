@@ -16,6 +16,35 @@ const LoginPage = () => {
     setSClass(e.target.value);
   };
 
+  const upJson = async () => {
+    const INFO=LogData;
+    const SReg=document.getElementById('SReg').value;
+    const SName=document.getElementById('SName').value;
+    const SPass=document.getElementById('SPass').value;
+    INFO.Reg.push(SReg);
+    INFO.Pass.push(SPass);
+    INFO.Name.push(SName);
+    INFO.Class.push(SClass);
+    try {
+        const response = await fetch('/write-json', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        
+        body: JSON.stringify({data:INFO,type:2}),
+    });
+
+    if (response.ok) {
+        alert('Mark Updated successfully!');
+    } else {
+        console.error('Failed to write JSON file:', response.statusText);
+    }
+    } catch (error) {
+    console.error('Error:', error.message);
+    }
+};
+
 
 
   function SignUp(){
@@ -25,9 +54,9 @@ const LoginPage = () => {
     const SPassCon=document.getElementById('SPassCon').value;
     if(SPass==SPassCon){
       if(LogData.Reg.includes(SReg)){
-        alert("NOPE");
+        alert("Already Exits");
       }else{
-        alert("YEAP");
+        upJson();
       }
     }else{
       alert("Password Not Same")

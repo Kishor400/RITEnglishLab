@@ -1,1 +1,26 @@
-{"Reg":["953622244024","404"],"Pass":["Io","123"],"Name":["Kishor","Admin"],"Class":["CSBS","OFFICIAL"]}
+{
+  "Reg": [
+    "953622244024",
+    "404",
+    "999",
+    "953622244008"
+  ],
+  "Pass": [
+    "Io",
+    "123",
+    "000",
+    "000"
+  ],
+  "Name": [
+    "Kishor",
+    "Admin",
+    "LUFFY",
+    "Ram"
+  ],
+  "Class": [
+    "CSBS",
+    "OFFICIAL",
+    "NONE",
+    "NONE"
+  ]
+}
