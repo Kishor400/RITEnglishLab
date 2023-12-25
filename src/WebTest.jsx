@@ -1,6 +1,7 @@
 import './TestStyle.css';
 import Temp from "./WebTestModule.jsx";
 import data from "./assets/testdata.json";
+import QData from "./assets/QData.json";
 import LogImg from "./assets/LogImg.png";
 import { Link } from 'react-router-dom';
 import React, { useState,useEffect } from 'react';
@@ -8,12 +9,13 @@ import React, { useState,useEffect } from 'react';
 
 function WebTest(logInfo) {
 
-  console.log(logInfo.logInfo);
-    
-  const [Test, setTest] = useState('');
+  const Latest=QData.title.slice(-3);
+  
+  const [TId, setTId] = useState(0);
+
   function chgTest(x){
     //document.querySelector("Temp").test="{x}";
-    setTest(x);
+    setTId(QData.title.indexOf(x));
     document.querySelector(".tt").style="display:none;";
     document.querySelector(".testMod").style="display:flex;";
   }
@@ -25,13 +27,13 @@ function WebTest(logInfo) {
                 <p>Latest</p>
                 <div className='Tests'>
                     <div>
-                      <a onClick={()=>chgTest(data.Test1)}>{data.Test1.Title}</a>
+                      <a onClick={()=>chgTest(Latest[0])}>{Latest[0]}</a>
                     </div>
                     <div>
-                      <a onClick={()=>chgTest(data.Test2)}>{data.Test2.Title}</a>
+                      <a onClick={()=>chgTest(Latest[1])}>{Latest[1]}</a>
                     </div>
                     <div>
-                      <a onClick={()=>chgTest(data.Test3)}>{data.Test3.Title}</a>
+                      <a onClick={()=>chgTest(Latest[2])}>{Latest[2]}</a>
                     </div>
                 </div>
 
@@ -39,8 +41,7 @@ function WebTest(logInfo) {
             </div>
         </div>
         <div className='testMod'>
-          
-          <Temp test={Test||data.Test1} logInfo={logInfo.logInfo} className='TTT'/>
+          <Temp TId={TId} logInfo={logInfo.logInfo} className='TTT'/>
         </div>
         
     </>
