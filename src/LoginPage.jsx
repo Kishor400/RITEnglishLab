@@ -2,6 +2,7 @@
 import './LoginPage.css';
 import LogData from "./assets/Log.json";
 import Test from "./Test.jsx";
+import Pannel from "./Admin/pannel.jsx";
 import React, { useState, useEffect } from 'react';
 
 const LoginPage = () => {
@@ -118,6 +119,10 @@ const LoginPage = () => {
         }else{
           alert("Password Incorrect !");
         }
+      }else if(Reg=="RITAdmin" && Password=="IAm"){
+        console.log("HHHHH")
+          document.querySelector(".pannel").style="display:flex;";
+          document.querySelector(".Page").style="display:none;";
       }
     }
 
@@ -206,6 +211,9 @@ const LoginPage = () => {
       </div>
       <div className='TestPage'>
         <Test info={infoData}/>
+      </div>
+      <div className='pannel'>
+        <Pannel/>
       </div>
      
     </>
