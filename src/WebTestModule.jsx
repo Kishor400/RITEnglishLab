@@ -3,8 +3,8 @@ import { useState } from 'react';
 import React, { useEffect } from 'react';
 import LogImg from "./assets/LogImg.png";
 import Test from './Test';
-import datas from "./assets/markData.json"
-import QDatas from "./assets/QData.json"
+import datas from "./assets/markData.json";
+import QDatas from "./assets/QData.json";
 
 
 
