@@ -120,7 +120,7 @@ const LoginPage = () => {
           alert("Password Incorrect !");
         }
       }else if(Reg=="RITAdmin" && Password=="IAm"){
-        console.log("HHHHH")
+          console.log("HHHHH")
           document.querySelector(".pannel").style="display:flex;";
           document.querySelector(".Page").style="display:none;";
       }
@@ -162,6 +162,7 @@ const LoginPage = () => {
                   <input type="text" placeholder="Name" id='SName'/>
                   <input type="text" placeholder="Register Number" id='SReg'/>
                   <select value={SClass} onChange={handleClassChange}>
+                    <option value="None">Select</option>
                     <option value="CSBS">CSBS</option>
                     <option value="MECH">MECH</option>
                     <option value="ECE">ECE</option>

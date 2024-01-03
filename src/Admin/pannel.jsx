@@ -47,7 +47,7 @@ function Pannel() {
             </div>
           </div>
           <div>
-            <p>l</p>
+            <p>{bst[0][0]}</p>
           </div>
         </div>
     </>
