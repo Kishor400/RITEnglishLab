@@ -42,10 +42,33 @@ body{
 }
 
 .csbs,.ece,.cse,.mech,.civil,.eee,.aids,.it{
-    background-color: aqua;
     width:200px;
     height:20px;
     margin-left: 20px;
+}
+.csbs{
+    background-color: red;
+}
+.ece{
+    background-color: blue;
+}
+.cse{
+    background-color: green;
+}
+.it{
+    background-color: yellowgreen;
+}
+.mech{
+    background-color: orangered;
+}
+.civil{
+    background-color: aqua;
+}
+.aids{
+    background-color: purple;
+}
+.eee{
+    background-color: yellow;
 }
 
 .analy{
