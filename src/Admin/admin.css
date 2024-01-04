@@ -1,17 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
 body{
     width: 100%;
     height:100vh;
+    background-color: #e0e0e0;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: auto;
 }
 
+.pannel{
+    background-color:#e0e0e0;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
 .bstbox{
-    background-color: rgb(201, 239, 253);
     width:500px;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid black;
     flex-direction: column;
+    border-radius: 20px;
+    background: white;
+    border:2px solid grey;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .bsttab{
@@ -20,6 +34,7 @@ body{
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .topbst{
@@ -30,23 +45,33 @@ body{
     padding: 10px;
     margin: 10px;
     font-weight:bold;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .regtop{
     padding-left: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.bstbox ul li p{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .bsttitle{
     width:500px;
     font-size: 13pt;
     padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 .csbs,.ece,.cse,.mech,.civil,.eee,.aids,.it{
     width:200px;
     height:20px;
     margin-left: 20px;
+    background-color: aquamarine;
+    border-radius: 10px;
 }
-.csbs{
+/* .csbs{
     background-color: red;
 }
 .ece{
@@ -69,15 +94,18 @@ body{
 }
 .eee{
     background-color: yellow;
-}
+} */
 
 .analy{
     display: flex;
     flex-direction: column;
-    background-color: rgb(247, 194, 150);
     padding: 20px;
-    border-radius: 10px;
-    border:2px solid black;
+    margin: 10px;
+    border-radius: 20px;
+    background: white;
+    border:2px solid grey;
+    width:500px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .tab{
@@ -85,7 +113,25 @@ body{
     justify-content: start;
     padding: 5px;
     padding-left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .tab p{
     width:70px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bodypan{
+    display:flex;
+    justify-content: center;
+}
+.sidebar{
+    background-color: aqua;
+    width: 150px;
+    
 }
