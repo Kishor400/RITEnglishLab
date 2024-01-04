@@ -39,24 +39,28 @@ function BST() {
 
     return (
     <>
-        <p className='bsttitle'>Best Performing Student</p>
-        <div className='bstbox'>
-        <ul>
-          <li className='topbst'>
-            <p  className='marktop'>Test Title</p>
-            <p className='regtop'>Register Number</p>
-            <p>Mark</p>
-          </li>
-          {bst.map((season) => (
-            <li className='bsttab'>
-              <p>{QData.title[season[1]]}</p>
-              <p>{season[0]}</p>
-              {/* <p>{log.Name[log.Reg.indexOf(season[0])]}</p> */}
-              <p>{season[2]}</p>
+      <div className='bbt'>
+        
+          <div className='bstbox'>
+          <p className='bsttitle'>Best Performing Student</p>
+          <ul>
+            <li className='topbst'>
+              <p  className='marktop'>Test Title</p>
+              <p className='regtop'>Register Number</p>
+              <p>Mark</p>
             </li>
-          ))}
-        </ul>
-        </div>
+            {bst.map((season) => (
+              <li className='bsttab'>
+                <p>{QData.title[season[1]]}</p>
+                <p>{season[0]}</p>
+                {/* <p>{log.Name[log.Reg.indexOf(season[0])]}</p> */}
+                <p>{season[2]}</p>
+              </li>
+            ))}
+          </ul>
+          </div>
+      </div>
+        
     </>
   )
 }

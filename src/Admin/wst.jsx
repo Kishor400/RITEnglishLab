@@ -12,7 +12,9 @@ function WST() {
   for (let i = 0; i < n; i++) {
     const y = [];
     for (let j = 0; j < Marks.length; j++) {
-      const k = x[j];
+        const z=Marks.length-j-1;
+        
+      const k = x[z];
       console.log(k);
       if (k[1] === i) {
         y.push(k);
@@ -39,8 +41,9 @@ function WST() {
 
     return (
     <>
-        <p className='bsttitle'>Student Need To Improve</p>
+        
         <div className='bstbox'>
+        <p className='bsttitle'>Student Need To Improve</p>
         <ul>
           <li className='topbst'>
             <p  className='marktop'>Test Title</p>
