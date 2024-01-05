@@ -5,7 +5,7 @@
     background-color:lightgray;
     display:flex;
     justify-content: space-around;
-    height:40px;
+    height:45px;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -19,6 +19,11 @@
 }
 .lo a{
     font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    cursor: pointer;
+}
+.lo a:hover{
+    color:white;
 }
 .Header div p{
     font-family: 'Josefin Sans', sans-serif;
@@ -31,8 +36,8 @@
 
 .Body{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items:center;
 }
 .Head{
     font-family: 'Josefin Sans', sans-serif;
@@ -40,9 +45,48 @@
     font-size: 20pt;
     width:300px;
     text-align: left;
+    margin-bottom: 10px;
 }
 .Para{
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     width:500px;
+    margin-bottom: 20px;
+}
+.buttons{
+    width:280px;
+    display: flex;
+    justify-content: space-between;
+}
+.but{
+    background-color: aquamarine;
+    width: 120px;
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+.but:hover{
+    box-shadow: 0 5px 15px aquamarine;
+    color:black;
+}
+.Foot{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Foot p{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+}
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+.RR img{
+    width: 400px;
 }

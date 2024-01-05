@@ -5,7 +5,7 @@ import { Link, useRoutes } from 'react-router-dom';
 import { Outlet} from "react-router-dom";
 
 
-import HomeImg from "./assets/HomeImg.jpg"
+import LandingImg from "./assets/Landing.png"
 
 function App() {
 
@@ -73,7 +73,7 @@ function App() {
         </div>
       </div> */}
 
-      <div>
+      <div className='landing'>
         <div className='Header'>
           <div className='ro'>
             <p>ENGLISH</p>
@@ -90,14 +90,17 @@ function App() {
           <div className='LL'>
             <p className='Head'>Language Isn't Barrier In Communication</p>
             <p className='Para'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, molestias magni nostrum exercitationem quia accusantium minus libero voluptate iure</p>
-            <div>
-              <Link to="/video">Watch Video</Link>
-              <Link to="/test">Take Test</Link>
+            <div className='buttons'>
+              <Link to="/video" className='but'>Watch Video</Link>
+              <Link to="/test" className='but'>Take Test</Link>
             </div>
           </div>
           <div className='RR'>
-            <img src={HomeImg}/>
+            <img src={LandingImg}/>
           </div>
+        </div>
+        <div className='Foot'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, deserunt.</p>
         </div>
 
       </div>
