@@ -29,19 +29,39 @@ function Test(info) {
     <>
     <p className='namer'>{ios[1]}</p>
         <div className='TestHome'>
-            
-            <div>
-                <img src={LogImg} className='testImger'/>
-            </div>
-            <div className='TestR'>
-                <p className='TestT'>Take Performance Test</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid facilis praesentium! Optio cum iusto esse voluptatum porro aliquam, et mollitia fuga, exercitationem quibusdam cumque tempora! Dicta dolorum.</p>
-                <div className='butCont'>
-                    <button  className='testBut' onClick={opnForm}>Google Form Test</button>
-                    <button  className='testBut' onClick={opnWeb}>Web Test</button>
-                </div>
-            </div>
-            
+        <div class="container">
+         <div class="card__container">
+            <article class="card__article">
+               <img src="assets/img/landscape-1.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Vancouver Mountains, Canada</span>
+                  <h2 class="card__title">The Great Path</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/img/landscape-2.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Poon Hill, Nepal</span>
+                  <h2 class="card__title">Starry Night</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/img/landscape-3.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Bojcin Forest, Serbia</span>
+                  <h2 class="card__title">Path Of Peace</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+         </div>
+      </div>
         </div>
         <div className='FormT'>
           <FormTest/>
