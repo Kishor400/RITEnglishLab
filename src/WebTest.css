@@ -175,3 +175,20 @@
       font-size: 16px;
     }
   }
+
+  .butWeb{
+    background-color: aquamarine;
+    width: 120px;
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition:box-shadow 0.3s;
+    
+}
+.butWeb:hover{
+    box-shadow: 0 5px 15px aquamarine;
+    color:black;
+    border:none;
+}

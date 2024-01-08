@@ -26,6 +26,7 @@ function WebTest(logInfo) {
   }
 
   const Latest=QData.title.slice(-3);
+  const LateDate=QData.Date.slice(-3);
   
   const [TId, setTId] = useState(0);
 
@@ -65,17 +66,17 @@ function WebTest(logInfo) {
                 <div className="ag-format-container">
                   <div className="ag-courses_box">
                     <div className="ag-courses_item">
-                      <a onClick={()=>chgTest(Latest[0])} className="ag-courses-item_link">
+                      <a onClick={()=>chgTest(Latest[2])} className="ag-courses-item_link">
                         <div className="ag-courses-item_bg"></div>
 
                         <div className="ag-courses-item_title">
-                          {Latest[0]}
+                          {Latest[2]}
                         </div>
 
                         <div className="ag-courses-item_date-box">
                           Start:
                           <span className="ag-courses-item_date">
-                            04.11.2022
+                            {LateDate[2]}
                           </span>
                         </div>
                       </a>
@@ -92,24 +93,24 @@ function WebTest(logInfo) {
                         <div className="ag-courses-item_date-box">
                           Start:
                           <span className="ag-courses-item_date">
-                            04.11.2022
+                          {LateDate[1]}
                           </span>
                         </div>
                       </a>
                     </div>
 
                     <div className="ag-courses_item">
-                      <a onClick={()=>chgTest(Latest[2])} className="ag-courses-item_link">
+                      <a onClick={()=>chgTest(Latest[0])} className="ag-courses-item_link">
                         <div className="ag-courses-item_bg"></div>
 
                         <div className="ag-courses-item_title">
-                          {Latest[2]}
+                          {Latest[0]}
                         </div>
 
                         <div className="ag-courses-item_date-box">
                           Start:
                           <span className="ag-courses-item_date">
-                            31.10.2022
+                          {LateDate[0]}
                           </span>
                         </div>
                       </a>
@@ -118,7 +119,7 @@ function WebTest(logInfo) {
                   </div>
                 </div>
 
-                <button>More</button>
+                <button className='butWeb'>More</button>
             </div>
         </div>
         <div className='testMod'>

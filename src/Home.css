@@ -65,6 +65,7 @@
     font-family: 'Josefin Sans', sans-serif;
     padding: 10px;
     border-radius: 10px;
+    transition:box-shadow 0.3s;
 }
 .but:hover{
     box-shadow: 0 5px 15px aquamarine;

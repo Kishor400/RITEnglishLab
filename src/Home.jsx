@@ -91,8 +91,8 @@ function App() {
             <p className='Head'>Language Isn't Barrier In Communication</p>
             <p className='Para'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, molestias magni nostrum exercitationem quia accusantium minus libero voluptate iure</p>
             <div className='buttons'>
-              <Link to="/video" className='but'>Watch Video</Link>
-              <Link to="/test" className='but'>Take Test</Link>
+              <Link to="/video" className='but'>Learn</Link>
+              <Link to="/test" className='but'>Practice</Link>
             </div>
           </div>
           <div className='RR'>
