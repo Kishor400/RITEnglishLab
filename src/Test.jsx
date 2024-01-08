@@ -34,7 +34,7 @@ function Test(info) {
 
          <div className='HeaderTest'>
             <div className='loTest'>
-               <a>English</a>
+               <a>Practice</a>
             </div>
          </div>
         <div className="containerTest">

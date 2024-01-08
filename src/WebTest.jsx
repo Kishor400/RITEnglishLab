@@ -1,4 +1,5 @@
 import './TestStyle.css';
+import "./WebTest.css";
 import Temp from "./WebTestModule.jsx";
 import data from "./assets/testdata.json";
 import QData from "./assets/QData.json";
@@ -41,6 +42,11 @@ function WebTest(logInfo) {
   }
     return (
     <>
+        <div className='HeaderWeb'>
+            <div className='loWeb'>
+               <a>Practice</a>
+            </div>
+         </div>
         <div className='tt'>
             <p>Assessment On Web</p>
             <div>
