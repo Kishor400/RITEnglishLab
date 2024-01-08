@@ -1,8 +1,10 @@
-import './TestStyle.css';
+import './TestHome.css';
 import FormTest from "./FormTest.jsx";
 import WebTest from "./WebTest.jsx";
 import React, { useState } from 'react';
 import LogImg from "./assets/LogImg.png";
+import Card1 from "./assets/landscape-1.png";
+import Card2 from "./assets/landscape-2.png";
 
 
 
@@ -27,42 +29,39 @@ function Test(info) {
      
     return (
     <>
-    <p className='namer'>{ios[1]}</p>
-        <div className='TestHome'>
-        <div class="container">
-         <div class="card__container">
-            <article class="card__article">
-               <img src="assets/img/landscape-1.png" alt="image" class="card__img">
+      <p className='namer'>{ios[1]}</p>
+      <div className='TestHome'>
 
-               <div class="card__data">
-                  <span class="card__description">Vancouver Mountains, Canada</span>
-                  <h2 class="card__title">The Great Path</h2>
-                  <a href="#" class="card__button">Read More</a>
+         <div className='HeaderTest'>
+            <div className='loTest'>
+               <a>English</a>
+            </div>
+         </div>
+        <div className="containerTest">
+         
+         <div className="card__containerTest">
+            <button className="card__article" onClick={opnWeb}>
+               <img src={Card1} alt="image" className="card__img"/>
+
+               <div className="card__data">
+                  <span className="card__description">Let Get Pratice On</span>
+                  <h2 className="card__title">Web Module</h2>
                </div>
-            </article>
+            </button>
 
-            <article class="card__article">
-               <img src="assets/img/landscape-2.png" alt="image" class="card__img">
+            <button className="card__article" onClick={opnForm}>
+               <img src={Card2} alt="image" className="card__img"/>
 
-               <div class="card__data">
-                  <span class="card__description">Poon Hill, Nepal</span>
-                  <h2 class="card__title">Starry Night</h2>
-                  <a href="#" class="card__button">Read More</a>
+               <div className="card__data">
+                  <span className="card__description">Let Get Pratice On</span>
+                  <h2 className="card__title">Google Forms</h2>
                </div>
-            </article>
+            </button>
 
-            <article class="card__article">
-               <img src="assets/img/landscape-3.png" alt="image" class="card__img">
-
-               <div class="card__data">
-                  <span class="card__description">Bojcin Forest, Serbia</span>
-                  <h2 class="card__title">Path Of Peace</h2>
-                  <a href="#" class="card__button">Read More</a>
-               </div>
-            </article>
+            
          </div>
       </div>
-        </div>
+      </div>
         <div className='FormT'>
           <FormTest/>
       </div>
