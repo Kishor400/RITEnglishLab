@@ -54,6 +54,9 @@ function TEST() {
       setData(xData);
       handleWriteJson();
     }
+    function opnCreate(){
+      document.querySelector(".CreateMenu").style="display:flex;";
+    }
 
     {/*CreateModule(["One Piece",["How Are You ?","Who Are You ?"],[["Fine","Not Fine"],["Human","Animal"]],["Fine","Human"],"01/09/2024","Luffy"])*/}
      
@@ -61,7 +64,7 @@ function TEST() {
     <>
         <div className='pppo'>
           <div className='oppp'>
-            <a>Create New</a>
+            <a className='CreateTest' onClick={opnCreate}>Create New</a>
           <div className="containerMore">
           <ul className="responsive-table">
             <li className="table-header">
@@ -83,6 +86,10 @@ function TEST() {
           </ul>
         </div>
         </div>
+        </div>
+        <div className='CreateMenu'>
+          <input type='text' placeholder='TEXT'></input>
+          <p>OPp</p>
         </div>
     </>
   )
