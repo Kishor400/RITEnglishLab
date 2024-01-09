@@ -19,13 +19,13 @@ import TEST from "./test";
 function Pannel() {
 
   function anafun(){
-    document.querySelector(".titpan").innerHTML="ANALYSIS";
+    document.querySelector(".titpan").innerHTML="Analysis";
     document.querySelector(".analysis").style="display:flex;";
     document.querySelector(".home").style="display:none;";
     document.querySelector(".test").style="display:none;";
   }
   function homefun(){
-    document.querySelector(".titpan").innerHTML="HOME";
+    document.querySelector(".titpan").innerHTML="Admin";
     document.querySelector(".home").style="display:flex;";
     document.querySelector(".analysis").style="display:none;";
     document.querySelector(".test").style="display:none;";
@@ -41,18 +41,18 @@ function Pannel() {
     <>
         <div className='pan'>
           <div className='in1'>
-            <div>
+            <div className='oiii'>
               <p className='titpan'>ANALYSIS</p>
+              <div>
+                <a onClick={homefun}>Home</a>
+                <a onClick={anafun}>Analysis</a>
+                <a onClick={testfun}>Practice</a>
+                <a>Learn</a>
+                <a>Student</a>
+              </div>
             </div>
             
             <div className='bodypan'>
-              <div className='sidebar'>
-                  <button className='sidetab' onClick={homefun}>HOME</button>
-                  <button className='sidetab' onClick={anafun}>ANALYSIS</button>
-                  <button className='sidetab' onClick={testfun}>TEST</button>
-                  <button className='sidetab'>VIDEO</button>
-                  <button className='sidetab'>STUDENT</button>
-              </div>
                 <div className='analysis'><ANALYSIS/></div>
                 <div className='home'><HOME/></div>
                 <div className='test'><TEST/></div>

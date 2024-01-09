@@ -16,6 +16,7 @@ function TEST() {
 
     let details=[];
     const [Data,setData]=useState(QData);
+    const [n,setn]=useState(0);
 
     for(let i=0;i<QData.title.length;i++){
       var x=[QData.title[i],QData.Date[i],QData.Author[i]]
@@ -56,6 +57,16 @@ function TEST() {
     }
     function opnCreate(){
       document.querySelector(".CreateMenu").style="display:flex;";
+      document.querySelector(".close").style="display:flex;";
+    }
+    function generator(){
+      let no=document.querySelector(".n").value;
+      setn(no);
+      console.log(no);
+    }
+    function cloCM(){
+      document.querySelector(".CreateMenu").style="display:none;";
+      document.querySelector(".close").style="display:none;";
     }
 
     {/*CreateModule(["One Piece",["How Are You ?","Who Are You ?"],[["Fine","Not Fine"],["Human","Animal"]],["Fine","Human"],"01/09/2024","Luffy"])*/}
@@ -66,12 +77,11 @@ function TEST() {
           <div className='oppp'>
             <a className='CreateTest' onClick={opnCreate}>Create New</a>
           <div className="containerMore">
-          <ul className="responsive-table">
+          <ul className="responsive-table rtt">
             <li className="table-header">
               <div className="col col-1">Date</div>
               <div className="col col-2">Module Name</div>
               <div className="col col-3">Author</div>
-              <div className="col col-4">Edit</div>
               <div className="col col-5">Delete</div>
             </li>
             {details.map((data) => (
@@ -79,7 +89,6 @@ function TEST() {
                 <div className="col col-1" >{data[1]}</div>
                 <div className="col col-2" >{data[0]}</div>
                 <div className="col col-3" >{data[2]}</div>
-                <div className="col col-4" ><a>Edit</a></div>
                 <div className="col col-5" ><a>Delete</a></div>
               </li>
             ))}
@@ -87,9 +96,30 @@ function TEST() {
         </div>
         </div>
         </div>
+        <a className='close' onClick={cloCM}>
+
+        </a>
         <div className='CreateMenu'>
-          <input type='text' placeholder='TEXT'></input>
-          <p>OPp</p>
+          <div className='CMenu'>
+          <p className='tuoo'>Module Name : <input placeholder='Module Name'></input></p>
+          <p>Author Name : <input placeholder='Author Name'></input></p>
+          <p>Date : <input placeholder='Date'></input></p>
+          <p>Enter Number Of Questions : <input placeholder='Number Of Questions' className='n'></input></p>
+          
+          <button onClick={generator}>Generate</button>
+          </div>
+            {Array.from({ length: n }, (_, i) => (
+              <div className='mods'>
+                <input placeholder={"Question "+(i+1)} id={"Question"+i}></input>
+                <input placeholder='Options' id={"Option"+i}></input>
+                <input placeholder='Answer' id={"Answer"+i}></input>
+              </div>
+              ))}
+          
+          <div className='TestBut'>
+            <button className='ButAdTest'>Submit</button>
+            <button className='ButAdTest' onClick={cloCM}>Cancel</button>
+          </div>
         </div>
     </>
   )
