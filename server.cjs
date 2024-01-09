@@ -15,8 +15,10 @@ app.post('/write-json', (req, res) => {
   var filePath="";
   if(type==1){
     filePath = path.join(__dirname, '/src/assets/markData.json');
-  }else{
+  }else if(type==2){
     filePath = path.join(__dirname, '/src/assets/Log.json');
+  }else if(type==3){
+    filePath = path.join(__dirname, '/src/assets/QData.json');
   }
   
 

@@ -275,3 +275,16 @@ h2 {
   overflow: auto;
   padding-top: 40px;
 }
+.responsive-table{
+  width:100%;
+}
+.containerMore,.oppp,.pppo{
+  width:100%;
+}
+.test{
+  width:100%;
+}
+.containerMore{
+  overflow: auto;
+  height: 90vh;
+}

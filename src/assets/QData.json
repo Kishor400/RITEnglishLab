@@ -2,4 +2,5 @@
 "question":[["What is shape of sun ?","what is color of sun ?","where is sun ?"],["Q1","Q2","Q3"],["Q1","Q2","Q3"]],
 "options":[[["Square","Reactangle","Triangle","Sphere"],["Blue","Red"],["Solar System","Chennai","america","Madurai"]],[["O1","O2","O3"],["O1","O2","O3"],["O1","O2","O3"]],[["O1","O2","O3"],["O1","O2","O3"],["O1","O2","O3"]]],
 "answer":[["Sphere","Red","Solar System"],["O1","O2","O3"],["O1","O2","O3"]],
-"Date":["08/06/2024","01/01/2024","26/12/2024"]}
+"Date":["08/06/2024","01/01/2024","26/12/2024"],
+"Author":["Luffy","Luna","Zoro"]}

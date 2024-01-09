@@ -22,13 +22,19 @@ function Pannel() {
     document.querySelector(".titpan").innerHTML="ANALYSIS";
     document.querySelector(".analysis").style="display:flex;";
     document.querySelector(".home").style="display:none;";
-    document.querySelector(".home").style="display:none;";
+    document.querySelector(".test").style="display:none;";
   }
   function homefun(){
     document.querySelector(".titpan").innerHTML="HOME";
     document.querySelector(".home").style="display:flex;";
     document.querySelector(".analysis").style="display:none;";
+    document.querySelector(".test").style="display:none;";
+  }
+  function testfun(){
+    document.querySelector(".titpan").innerHTML="Practice";
     document.querySelector(".home").style="display:none;";
+    document.querySelector(".analysis").style="display:none;";
+    document.querySelector(".test").style="display:flex;";
   }
      
     return (
@@ -43,7 +49,7 @@ function Pannel() {
               <div className='sidebar'>
                   <button className='sidetab' onClick={homefun}>HOME</button>
                   <button className='sidetab' onClick={anafun}>ANALYSIS</button>
-                  <button className='sidetab'>TEST</button>
+                  <button className='sidetab' onClick={testfun}>TEST</button>
                   <button className='sidetab'>VIDEO</button>
                   <button className='sidetab'>STUDENT</button>
               </div>

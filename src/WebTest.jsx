@@ -129,7 +129,7 @@ function WebTest(logInfo) {
         </div>
         <div className='MoreWeb'>
         <div className="containerMore">
-          <h2>Avavailable <small>Triggers on 767px</small></h2>
+          <h2>Aavilable<small>Modules</small></h2>
           <ul className="responsive-table">
             <li className="table-header">
               <div className="col col-1">Job Id</div>
